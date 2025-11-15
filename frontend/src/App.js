@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { AuthProvider } from './context/AuthContext';
@@ -32,15 +32,15 @@ const Home = () => (
     <h1 style={{ color: '#003366' }}>Welcome to Banking System</h1>
     <p className="lead mt-4">Manage your finances with ease</p>
     <div className="mt-5">
-      <a href="/register" className="btn btn-success btn-lg me-3">
+      <Link to="/register" className="btn btn-success btn-lg me-3">
         Register as Customer
-      </a>
-      <a href="/login" className="btn btn-info btn-lg me-3">
+      </Link>
+      <Link to="/login" className="btn btn-info btn-lg me-3">
         Customer Login
-      </a>
-      <a href="/admin/login" className="btn btn-primary btn-lg">
+      </Link>
+      <Link to="/admin/login" className="btn btn-primary btn-lg">
         Admin Login
-      </a>
+      </Link>
     </div>
   </div>
 );
