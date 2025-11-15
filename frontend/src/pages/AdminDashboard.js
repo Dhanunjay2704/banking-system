@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import api from '../utils/api';
 import './AdminDashboard.css';
 
@@ -114,7 +115,7 @@ const AdminDashboard = () => {
       {/* Quick Actions */}
       <div className="row g-4 mb-5">
         <div className="col-md-6 col-lg-3">
-          <a href="/admin/customers" className="action-button">
+          <Link to="/admin/customers" className="action-button">
             <div className="action-icon">👥</div>
             <div className="action-text">
               <p className="action-title">Manage Customers</p>
@@ -124,7 +125,7 @@ const AdminDashboard = () => {
         </div>
 
         <div className="col-md-6 col-lg-3">
-          <a href="/admin/pending" className="action-button">
+          <Link to="/admin/pending" className="action-button">
             <div className="action-icon">⏳</div>
             <div className="action-text">
               <p className="action-title">Approve Accounts</p>
@@ -134,7 +135,7 @@ const AdminDashboard = () => {
         </div>
 
         <div className="col-md-6 col-lg-3">
-          <a href="/admin/transactions" className="action-button">
+          <Link to="/admin/transactions" className="action-button">
             <div className="action-icon">📋</div>
             <div className="action-text">
               <p className="action-title">View Transactions</p>
@@ -144,7 +145,7 @@ const AdminDashboard = () => {
         </div>
 
         <div className="col-md-6 col-lg-3">
-          <a href="/admin/deposit" className="action-button">
+          <Link to="/admin/deposit" className="action-button">
             <div className="action-icon">💸</div>
             <div className="action-text">
               <p className="action-title">Deposit Money</p>
@@ -154,7 +155,7 @@ const AdminDashboard = () => {
         </div>
 
         <div className="col-md-6 col-lg-3">
-          <a href="/admin/withdraw" className="action-button">
+          <Link to="/admin/withdraw" className="action-button">
             <div className="action-icon">💸</div>
             <div className="action-text">
               <p className="action-title">Withdraw Money</p>
