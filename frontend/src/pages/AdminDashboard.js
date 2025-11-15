@@ -121,7 +121,7 @@ const AdminDashboard = () => {
               <p className="action-title">Manage Customers</p>
               <small>View & Delete</small>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="col-md-6 col-lg-3">
@@ -131,7 +131,7 @@ const AdminDashboard = () => {
               <p className="action-title">Approve Accounts</p>
               <small>Pending Requests</small>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="col-md-6 col-lg-3">
@@ -141,7 +141,7 @@ const AdminDashboard = () => {
               <p className="action-title">View Transactions</p>
               <small>All Transactions</small>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="col-md-6 col-lg-3">
@@ -151,7 +151,7 @@ const AdminDashboard = () => {
               <p className="action-title">Deposit Money</p>
               <small>Add Funds</small>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="col-md-6 col-lg-3">
@@ -161,7 +161,7 @@ const AdminDashboard = () => {
               <p className="action-title">Withdraw Money</p>
               <small>Remove Funds</small>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="col-md-6 col-lg-3">
