@@ -1,0 +1,10 @@
+# Render Deployment Configuration for Backend
+services:
+  - type: web
+    name: banking-system-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production

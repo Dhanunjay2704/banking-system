@@ -1,0 +1,9 @@
+/* Customer Dashboard styles */
+
+.card h4, .card h3 {
+  color: #003366;
+}
+
+@media (max-width: 768px) {
+  .row.g-4 { gap: 1rem; }
+}

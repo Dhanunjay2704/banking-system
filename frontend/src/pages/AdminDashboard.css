@@ -1,0 +1,131 @@
+/* Admin Dashboard Styles */
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+}
+
+.stat-content h3 {
+  margin: 0;
+  color: #003366;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Action Buttons */
+.action-button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  border-color: #003366;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  font-size: 2rem;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.action-text {
+  flex: 1;
+}
+
+.action-title {
+  margin: 0;
+  font-weight: 600;
+  color: #003366;
+  font-size: 1rem;
+}
+
+.action-text small {
+  color: #999;
+  display: block;
+  margin-top: 3px;
+}
+
+/* Table Styles */
+.table-hover tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.table th {
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 12px 8px;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .action-button {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+}
