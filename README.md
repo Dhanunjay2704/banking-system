@@ -43,9 +43,3 @@ Simple banking web application (Express + MongoDB backend, React frontend).
 3. Create a Render **Static Site** for the frontend with root directory `frontend`, build command `npm install && npm run build`, and set `REACT_APP_API_URL` to your backend URL.
 4. Add `_redirects` in `frontend/public` (already present) so client-side routes work.
 
-## Troubleshooting
-- If SPA routes return 404 on the static host, ensure `_redirects` exists and frontend was rebuilt after changes.
-- Check browser DevTools Console/Network to inspect API request URLs and CORS errors.
-
----
-If you want, I can also add a longer deployment guide or commit this README for you.
