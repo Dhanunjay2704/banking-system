@@ -57,7 +57,7 @@ const AdminLogin = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="admin@example.com"
+                    placeholder="admin@bank.com"
                   />
                 </div>
 
@@ -89,7 +89,7 @@ const AdminLogin = () => {
               <p className="text-center text-muted mb-0">
                 Demo Credentials:
                 <br />
-                Email: <strong>admin@example.com</strong>
+                Email: <strong>admin@bank.com</strong>
                 <br />
                 Password: <strong>admin123</strong>
               </p>
