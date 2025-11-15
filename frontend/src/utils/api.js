@@ -1,6 +1,16 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Determine API base URL:
+// - Prefer the build-time env var `REACT_APP_API_URL`.
+// - If not provided but we're running on Render's domain, fall back to the known backend URL.
+// - Otherwise default to local development URL.
+const API_BASE_URL = process.env.REACT_APP_API_URL
+  || (typeof window !== 'undefined' && window.location.hostname.includes('onrender.com')
+    ? 'https://banking-system-backend-y0fu.onrender.com/api'
+    : 'http://localhost:5000/api');
+
+// Helpful debug log (will appear in browser console)
+console.log('API base URL:', API_BASE_URL);
 
 const api = axios.create({
   baseURL: API_BASE_URL,
